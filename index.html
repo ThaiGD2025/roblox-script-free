@@ -61,6 +61,13 @@
             flex-wrap: wrap;
         }
 
+        .discord-group {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+
         .btn-download {
             flex: 1;
             min-width: 200px;
@@ -80,10 +87,60 @@
             cursor: pointer;
             text-align: center;
         }
+        .btn-download-yellow {
+            flex: 1;
+            min-width: 200px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px 24px;
+            font-size: 15px;
+            font-weight: 600;
+            color: #ffffff;
+            background: linear-gradient(135deg, #eaf63b 0%, #d8d51d 100%);
+            border: none;
+            border-radius: 10px;
+            text-decoration: none;
+            box-shadow: 0 4px 12px rgba(204, 216, 29, 0.3);
+            transition: all 0.2s ease;
+            cursor: pointer;
+            text-align: center;
+        }
+        .btn-download-red {
+            flex: 1;
+            min-width: 200px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px 24px;
+            font-size: 15px;
+            font-weight: 600;
+            color: #ffffff;
+            background: linear-gradient(135deg, #f63b3b 0%, #d81d1d 100%);
+            border: none;
+            border-radius: 10px;
+            text-decoration: none;
+            box-shadow: 0 4px 12px rgba(216, 29, 29, 0.3);
+            transition: all 0.2s ease;
+            cursor: pointer;
+            text-align: center;
+        }
 
         .btn-download:hover {
             transform: translateY(-2px);
             box-shadow: 0 6px 20px rgba(29, 78, 216, 0.4);
+            filter: brightness(1.1);
+        }
+
+        .btn-download-yellow:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(216, 207, 29, 0.4);
+            filter: brightness(1.1);
+        }
+
+        .btn-download-red:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(216, 29, 29, 0.4);
             filter: brightness(1.1);
         }
 
@@ -233,6 +290,37 @@
 
     </div>
 
+    <div class="section-container">
+        <div class="section-title">Hỗ trợ UGPhone</div>
+        <div class="discord-group">
+            <a href="https://www.mediafire.com/file/r7rxhthhezw364q/Kiwi_VPN_MOB.apk/file?dkey=ku0arirlw8z&r=1898" target="_blank" class="btn-download">
+                VPN Kiwi mod
+            </a>
+            <a href="https://cloudvipvn.site/doidiem.php" target="_blank" class="btn-download btn-delta">
+                Web Cloud VIP VN
+            </a>
+            <a href="https://www.ugphone.com/toc-portal/#/dashboard/index" target="_blank" class="btn-download-yellow">
+                Web UGPhone
+            </a>
+            <a href="https://clientclone.ayabloxtraicay.site/cac-ban-clone-treo-nhieu-tab-by-anya-21-06-2026-0009984.php" target="_blank" class="btn-download-red">
+                Web Cilent Clone
+            </a>
+        </div>
+    </div>
+
+    <div class="section-container">
+        <div class="section-title" style="border-left-color: #ef4444;">Video Hướng Dẫn Chi Tiết</div>
+        <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 10px; border: 1px solid rgba(255,255,255,0.1);">
+            <iframe 
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+                src="https://www.youtube.com/embed/RE5v-2soNU0" 
+                title="Cách treo Nhiều Tab trên Ugphone" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>
+            </iframe>
+        </div>
+    </div>
     <script>
         function copyScript(button) {
             var codeInput = button.previousElementSibling;
